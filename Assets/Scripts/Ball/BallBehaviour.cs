@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BallBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    float enlargeCoeff = 1.1f;
     private void OnEnable()
     {
         Destroy(gameObject, 3f);
@@ -14,9 +16,10 @@ public class BallBehaviour : MonoBehaviour
         GameObject obj = collision.gameObject;
         if (obj.CompareTag("Destructable"))
         {
-            obj.GetComponent<Rigidbody>().AddExplosionForce(3000f, obj.transform.position, 4f);
+            obj.GetComponent<Rigidbody>().AddExplosionForce(1500f, obj.transform.position, 4f);
             Destroy(obj, 1.5f);
-            Destroy(gameObject);
+            transform.localScale *= enlargeCoeff;
+            transform.position = new Vector3(transform.position.x,transform.position.y * enlargeCoeff, transform.position.z);
         }
     }
 }
