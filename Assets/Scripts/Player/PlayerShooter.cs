@@ -11,12 +11,7 @@ public class PlayerShooter : MonoBehaviour
     {
         InputController.spacePressed += SpawnBall;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     void SpawnBall()
     {
         if (ballContainer.childCount == 0)

@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207c6fc1050ade045a0268dc36ee9d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveMultiplier: 20
+  moveMultiplier: 30
   m_EulerAngleVelocity: {x: 270, y: 0, z: 0}
   useRigidBody: 1
 --- !u!114 &7337972537029377305
@@ -140,3 +140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enlargeCoeff: 1.05
+  exploisonForce: 1500
+  exploisoinRadius: 5
+  HitPoint: 20

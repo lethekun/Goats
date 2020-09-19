@@ -6,6 +6,12 @@ public class BallBehaviour : MonoBehaviour
 {
     [SerializeField]
     float enlargeCoeff = 1.1f;
+    [SerializeField]
+    float exploisonForce = 1500f;
+    [SerializeField]
+    float exploisoinRadius = 5f;
+
+    public float HitPoint = 100f;
     private void OnEnable()
     {
         Destroy(gameObject, 3f);
@@ -16,10 +22,26 @@ public class BallBehaviour : MonoBehaviour
         GameObject obj = collision.gameObject;
         if (obj.CompareTag("Destructable"))
         {
-            obj.GetComponent<Rigidbody>().AddExplosionForce(1500f, obj.transform.position, 4f);
+            obj.GetComponent<Rigidbody>().AddExplosionForce(exploisonForce,collision.contacts[0].point, exploisoinRadius);
             Destroy(obj, 1.5f);
-            transform.localScale *= enlargeCoeff;
+            Enlarge();
             transform.position = new Vector3(transform.position.x,transform.position.y * enlargeCoeff, transform.position.z);
+            TakeDamage();
+        }
+    }
+
+    private void Enlarge()
+    {
+        if (transform.localScale.x < 1f)
+            transform.localScale *= enlargeCoeff;
+    }
+
+    private void TakeDamage()
+    {
+        HitPoint -= 20f;
+        if(HitPoint <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
