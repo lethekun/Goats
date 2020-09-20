@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 8561981467533111370}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -552,6 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveMultiplier: 20
   m_EulerAngleVelocity: {x: 270, y: 0, z: 0}
+  useRigidBody: 0
 --- !u!114 &8561981467533111370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce61f630691416648b1270281d9cac7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 5819864145239128666, guid: 6f831f9fd78609546a5fcd5d22c74ca9,
+    type: 3}
   enlargeCoeff: 1.2
+  exploisonForce: 1500
+  exploisoinRadius: 5
+  HitPoint: 100
 --- !u!1 &3521890506170514999
 GameObject:
   m_ObjectHideFlags: 0

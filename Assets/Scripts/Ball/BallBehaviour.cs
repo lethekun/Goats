@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BallBehaviour : MonoBehaviour
 {
+
     [SerializeField]
     float enlargeCoeff = 1.1f;
     [SerializeField]
@@ -28,6 +29,7 @@ public class BallBehaviour : MonoBehaviour
             transform.position = new Vector3(transform.position.x,transform.position.y * enlargeCoeff, transform.position.z);
             TakeDamage();
         }
+
     }
 
     private void Enlarge()

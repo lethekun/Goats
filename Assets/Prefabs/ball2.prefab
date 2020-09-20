@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7337972537029377305}
   m_Layer: 0
   m_Name: ball2
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,4 +142,4 @@ MonoBehaviour:
   enlargeCoeff: 1.05
   exploisonForce: 1500
   exploisoinRadius: 5
-  HitPoint: 20
+  HitPoint: 100
