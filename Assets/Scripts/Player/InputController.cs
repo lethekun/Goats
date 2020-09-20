@@ -22,7 +22,7 @@ public class InputController : MonoBehaviour
                 _horz = hitInfo.point.x;
             }
         }
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             spacePressed?.Invoke();
         }
