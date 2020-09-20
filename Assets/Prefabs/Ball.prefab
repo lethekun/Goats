@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3521890504418819048}
   - component: {fileID: 3521890504418818965}
   - component: {fileID: 3521890504418818966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3521890505002274458}
   - component: {fileID: 3521890505002274439}
   - component: {fileID: 3521890505002274456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 3521890505232692817}
   - component: {fileID: 3521890505232692830}
   - component: {fileID: 3521890505232692831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 3521890505299433488}
   - component: {fileID: 3521890505299433501}
   - component: {fileID: 3521890505299433502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 3521890505518061403}
   - component: {fileID: 3521890505518061400}
   - component: {fileID: 3521890505518061401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 3521890505734842219}
   - component: {fileID: 3521890505734842216}
   - component: {fileID: 3521890505734842217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 4377320133392493408}
   - component: {fileID: 3521890505841109411}
   - component: {fileID: 8561981467533111370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -565,8 +565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce61f630691416648b1270281d9cac7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 5819864145239128666, guid: 6f831f9fd78609546a5fcd5d22c74ca9,
-    type: 3}
   enlargeCoeff: 1.2
   exploisonForce: 1500
   exploisoinRadius: 5
@@ -582,7 +580,7 @@ GameObject:
   - component: {fileID: 3521890506170514998}
   - component: {fileID: 3521890506170514995}
   - component: {fileID: 3521890506170514996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3521890506174165007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

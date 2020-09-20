@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 746e9820092daf5419709f36100f75f1
+||||||| constructed merge base
+guid: d0603b6d5186471b96c778c3949c7ce2
+=======
+guid: 3d4c194050d6b8d499a2c17fa55b0f9c
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

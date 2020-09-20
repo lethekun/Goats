@@ -12,7 +12,7 @@ public class BallBehaviour : MonoBehaviour
     [SerializeField]
     float exploisonForce = 1500f;
     [SerializeField]
-    float exploisoinRadius = 5f;
+    float exploisoinRadius = 2f;
 
     public float HitPoint = 100f;
     private void OnEnable()
@@ -25,7 +25,7 @@ public class BallBehaviour : MonoBehaviour
         GameObject obj = collision.gameObject;
         if (obj.CompareTag("Destructable"))
         {
-            obj.GetComponent<Rigidbody>().AddExplosionForce(exploisonForce, collision.contacts[0].point, exploisoinRadius);
+            obj.GetComponent<Rigidbody>().AddExplosionForce(exploisonForce, collision.contacts[0].point, exploisoinRadius, 0.4f, ForceMode.Impulse);
             
             OnProbDestroyed?.Invoke(obj.GetComponent<Destructable>().reward);
             Destroy(obj, 1.5f);            

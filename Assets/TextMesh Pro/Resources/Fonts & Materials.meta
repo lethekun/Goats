@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 8210456f2359fe2408788542aa043789
+||||||| constructed merge base
+guid: 731f1baa9d144a9897cb1d341c2092b8
+=======
+guid: 7044ebd2418682c48974201b66a7b0e3
+>>>>>>> Stashed changes
 folderAsset: yes
 timeCreated: 1442040525
 licenseType: Pro
