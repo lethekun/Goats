@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207c6fc1050ade045a0268dc36ee9d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveMultiplier: 30
+  moveMultiplier: 10
   m_EulerAngleVelocity: {x: 270, y: 0, z: 0}
   useRigidBody: 1
 --- !u!114 &7337972537029377305
