@@ -14,7 +14,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Destructable"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            //
             CameraMovement cm = Camera.main.GetComponent<CameraMovement>();
             cm.enabled = false;
         }

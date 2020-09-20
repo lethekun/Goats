@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ public class Destructable : MonoBehaviour
 {
     [SerializeField] GameObject explosionParticle;
     Vector3 startTransform;
+
+    public int reward = 10;
+
     private void Start()
     {
        
@@ -18,7 +22,7 @@ public class Destructable : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Ball"))
         {
-            Instantiate(explosionParticle, StartTransform(), Quaternion.identity);
+            Destroy(Instantiate(explosionParticle, StartTransform(), Quaternion.identity),2f);
         }
     }
 }
