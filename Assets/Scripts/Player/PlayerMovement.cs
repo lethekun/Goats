@@ -18,11 +18,11 @@ public class PlayerMovement : MonoBehaviour
         _input = GetComponent<InputController>();
         _touch = GetComponent<TouchController>();
 
-        if (_input == null && _touch != null)
+        if (!_input.isActiveAndEnabled && _touch.isActiveAndEnabled)
             isMobile = true;
-        else if (_input != null && _touch == null)
+        else if (_input.isActiveAndEnabled && !_touch.isActiveAndEnabled)
             isMobile = false;
-        else if (_input != null && _touch != null)
+        else if (_input.isActiveAndEnabled && _touch.isActiveAndEnabled)
             Debug.LogError("İki input controllerı da eklemişsiniz.");
         else
             Debug.LogError("Input girdisi verecek bir component yok!");

@@ -13,8 +13,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Destructable"))
         {
-            // AfterDeathSettings();
             Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Undestructable"))
+        {
+            AfterDeathSettings();
         }
     }
 

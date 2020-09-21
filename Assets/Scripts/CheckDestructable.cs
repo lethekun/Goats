@@ -7,7 +7,7 @@ public class CheckDestructable : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Destructable")) ;
+        if (other.gameObject.CompareTag("Destructable"))
         {
             FindObjectOfType<PlayerInteraction>().animator.SetTrigger("isDestructable");
         }
