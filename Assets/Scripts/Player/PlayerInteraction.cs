@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             //particle üret ve yoket
             Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
-            collision.gameObject.GetComponentInChildren<ProceduralMeshExploder.MeshExploder>().Explode();
+            collision.gameObject.GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
             collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(1500, collision.contacts[0].point, 2f);
             Destroy(collision.gameObject);
         }
