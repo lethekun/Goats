@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Fire
   - Undestructable
+  - Melee
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ball
   - Player
   - Enemy
-  - 
+  - Clusters
   - 
   - 
   - 

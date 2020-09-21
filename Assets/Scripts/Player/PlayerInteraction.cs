@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-   public Animator animator;
+    Animator animator;
+    [SerializeField] GameObject explosionParticle;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -13,9 +14,13 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Destructable"))
         {
-            Destroy(collision.gameObject);
+            //particle üret ve yoket
+            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
+
+            collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(1500, collision.contacts[0].point, 2f);
         }
-        else if (collision.gameObject.CompareTag("Undestructable"))
+        //else 
+        if (collision.gameObject.CompareTag("Undestructable"))
         {
             AfterDeathSettings();
         }

@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(gameObject);
-        BallBehaviour.OnProbDestroyed += AddScore;
+        Destructable.OnObstacleDestroyed += AddScore;
     }
 
     public void AddScore(int scoreToAdd)

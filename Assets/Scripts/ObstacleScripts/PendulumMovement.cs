@@ -9,7 +9,7 @@ public class PendulumMovement : MonoBehaviour
     [SerializeField]
     float SpeedOfPendulum = 1.0f;
 
-    void Update()
+    void LateUpdate()
     {
         float angle = MaxAngleDeflection * Mathf.Sin(Time.time * SpeedOfPendulum);
         transform.localRotation = Quaternion.Euler(0, 0, angle);

@@ -40,7 +40,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ClustersLayer: 8
+  ClustersLayer: 11
   UseMeshColliders: 0
   RecalculateNormals: 1
   ColorAnimations:

@@ -9,7 +9,7 @@ public class CheckDestructable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Destructable"))
         {
-            FindObjectOfType<PlayerInteraction>().animator.SetTrigger("isDestructable");
+            transform.parent.gameObject.GetComponent<Animator>().SetTrigger("isDestructable");
         }
     }
 }
