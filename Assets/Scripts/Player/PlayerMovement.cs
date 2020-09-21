@@ -49,6 +49,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = new Vector3(horzDif * horizontalSpeed, 0f, forwardSpeed)*Time.smoothDeltaTime;
         
         transform.position += move;
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -3f, +3f), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1.5f, +1.5f), transform.position.y, transform.position.z);
     }
 }
