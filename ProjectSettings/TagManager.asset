@@ -7,6 +7,7 @@ TagManager:
   - Destructable
   - Ball
   - Fire
+  - Undestructable
   layers:
   - Default
   - TransparentFX
