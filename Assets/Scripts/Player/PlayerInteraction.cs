@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
+   public Animator animator;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Destructable"))
         {
-            AfterDeathSettings();
+            // AfterDeathSettings();
+            Destroy(collision.gameObject);
         }
     }
 
     void AfterDeathSettings()
     {
-        GetComponent<Animator>().SetBool("isDead", true);
+        animator.SetBool("isDead", true);
         GetComponent<PlayerMovement>().enabled = false;
         GetComponent<PlayerShooter>().enabled = false;
         Camera.main.GetComponent<CameraMovement>().enabled = false;
