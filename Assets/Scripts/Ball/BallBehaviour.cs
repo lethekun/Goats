@@ -25,7 +25,7 @@ public class BallBehaviour : MonoBehaviour
         GameObject obj = collision.gameObject;
         if (obj.CompareTag("Destructable"))
         {
-            obj.GetComponent<Rigidbody>().AddExplosionForce(exploisonForce, collision.contacts[0].point, exploisoinRadius, 0.4f, ForceMode.Impulse);
+            obj.GetComponent<Rigidbody>().AddExplosionForce(exploisonForce, collision.contacts[0].point, exploisoinRadius);
             
             OnProbDestroyed?.Invoke(obj.GetComponent<Destructable>().reward);
             Destroy(obj, 1.5f);            
