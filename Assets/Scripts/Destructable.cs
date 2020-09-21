@@ -38,6 +38,7 @@ public class Destructable : MonoBehaviour
         {
             OnObstacleDestroyed?.Invoke(reward);
             GetComponentInChildren<ProceduralMeshExploder.MeshExploder>().Explode();
+            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
             //kendini yoket
             Destroy(gameObject);
         }
