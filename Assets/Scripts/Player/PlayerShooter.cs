@@ -9,7 +9,7 @@ public class PlayerShooter : MonoBehaviour
     public Transform ballContainer;
     private void Awake()
     {
-        //InputController.spacePressed += SpawnBall;
+        InputController.spacePressed += SpawnBall;
         TouchController.OnTap += SpawnBall;
     }
    
