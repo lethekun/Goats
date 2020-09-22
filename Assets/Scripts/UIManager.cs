@@ -7,6 +7,9 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     TMP_Text scoreText;
+    [SerializeField]
+    TMP_Text score;
+
 
     void Awake()
     {
@@ -16,5 +19,6 @@ public class UIManager : MonoBehaviour
     void UpdateScore()
     {
         scoreText.text = "Score: " + ScoreManager.Instance.totalScore;
+
     }
 }

@@ -1258,6 +1258,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1292,7 +1293,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 65.35
   m_fontSizeBase: 19.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1953,22 +1954,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1231703461, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
-      propertyPath: m_TagString
-      value: Melee
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231703461, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231703461, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231703462, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 953143722027617469, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2029,48 +2014,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4278814313311862446, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 5206314983590843780, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: ballContainer
       value: 
       objectReference: {fileID: 2060566347}
-    - target: {fileID: 5206314983590843834, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5206314983590843837, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 609349934}
-    - target: {fileID: 5206314983590843837, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: explosionParticle
-      value: 
-      objectReference: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
-    - target: {fileID: 6925919868530698080, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 0f946a05b422240a9b9d55afdec47789, type: 3}
-    - target: {fileID: 7183308389517959623, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7183308389517959623, guid: 8dce9ba2af64a42489243c460ed2889a,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 30d69dadd68cc8e4e9eab4a647b08ac5, type: 2}
-    m_RemovedComponents:
-    - {fileID: 569799360, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
 --- !u!1001 &535993857
 PrefabInstance:
@@ -2227,12 +2176,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f9c4a99059a34d842b70997d0245fde2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eaab3632cbfd4a45851d24bde1524cf, type: 3}
---- !u!95 &609349934 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7183308389517959623, guid: 8dce9ba2af64a42489243c460ed2889a,
-    type: 3}
-  m_PrefabInstance: {fileID: 529518572}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &631317728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3310,28 +3253,6 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!1 &979605386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1231703461, guid: 8dce9ba2af64a42489243c460ed2889a,
-    type: 3}
-  m_PrefabInstance: {fileID: 529518572}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &979605390
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979605386}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5461,6 +5382,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
