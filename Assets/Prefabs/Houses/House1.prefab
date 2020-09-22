@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1341550664657878900
 Transform:
@@ -31,7 +31,6 @@ Transform:
   - {fileID: 7429427118734496050}
   - {fileID: 7429427120442486737}
   - {fileID: 7429427120026981825}
-  - {fileID: 7427697988206661235}
   - {fileID: 7423542914881238045}
   - {fileID: 7423215133677983135}
   - {fileID: 7429570202102654506}
@@ -68,99 +67,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7427697988206661199
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7427697988206661235}
-  - component: {fileID: 7427697988206661196}
-  - component: {fileID: 7427697988206661197}
-  - component: {fileID: 7427697988206661198}
-  m_Layer: 0
-  m_Name: Cube (32)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7427697988206661235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7427697988206661199}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.499992, y: -0.2, z: -54.410004}
-  m_LocalScale: {x: 13.39, y: 1, z: 10.39}
-  m_Children: []
-  m_Father: {fileID: 1341550664657878900}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7427697988206661196
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7427697988206661199}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &7427697988206661197
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7427697988206661199}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &7427697988206661198
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7427697988206661199}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1001 &7427697986260623509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,6 +77,10 @@ PrefabInstance:
     - target: {fileID: 1254099001635034, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_Name
       value: house-roof-window-two (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1254099001635034, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -227,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64561278494377170, guid: d444fae48f5c24ef194f74bf52a925f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
 --- !u!4 &7423542914777150197 stripped
@@ -245,6 +160,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -276,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -300,6 +219,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570203250848003 stripped
@@ -318,6 +242,10 @@ PrefabInstance:
     - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_Name
       value: flowers-window (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4181911268084690, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -367,6 +295,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65441225478349866, guid: 12806afb936964845a50813d99e35a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12806afb936964845a50813d99e35a76, type: 3}
 --- !u!4 &7429427119118169890 stripped
@@ -385,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -444,6 +381,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570202901833473 stripped
@@ -462,6 +404,10 @@ PrefabInstance:
     - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_Name
       value: house-roof (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -493,7 +439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -523,6 +469,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215134610705839 stripped
@@ -541,6 +492,10 @@ PrefabInstance:
     - target: {fileID: 1018846311968998, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_Name
       value: house-wall-door (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018846311968998, guid: 1e212581da1d146fca5233289052a32f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -587,6 +542,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64982856932745286, guid: 1e212581da1d146fca5233289052a32f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e212581da1d146fca5233289052a32f, type: 3}
 --- !u!4 &7423608689221102077 stripped
@@ -605,6 +565,10 @@ PrefabInstance:
     - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_Name
       value: house-wall-corner (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalPosition.x
@@ -636,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalScale.z
@@ -659,6 +623,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64985733809778718, guid: 49f7d5bd99bdc485a85e1557eee2f199,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
 --- !u!4 &7429547882335498546 stripped
@@ -677,6 +646,10 @@ PrefabInstance:
     - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_Name
       value: house-roof (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -708,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -728,6 +701,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 11a8c080607cf47c299aff53087e0334, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215134735714669 stripped
@@ -746,6 +724,10 @@ PrefabInstance:
     - target: {fileID: 1254099001635034, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_Name
       value: house-roof-window-two (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1254099001635034, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -777,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4999496750207584, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -802,6 +784,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[4]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64561278494377170, guid: d444fae48f5c24ef194f74bf52a925f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d444fae48f5c24ef194f74bf52a925f6, type: 3}
 --- !u!4 &7423542914881238045 stripped
@@ -820,6 +807,10 @@ PrefabInstance:
     - target: {fileID: 1737144855064878, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_Name
       value: house-wall-window-two (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737144855064878, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -851,7 +842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -866,6 +857,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65808424292096552, guid: 6c9240d65ec01421abf47aa7ff348fef,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
 --- !u!4 &7423284445525376341 stripped
@@ -884,6 +880,10 @@ PrefabInstance:
     - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_Name
       value: house-roof-edge (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -915,7 +915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -935,6 +935,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64022207616140380, guid: 47dd058b3899d4c92aa4ed13fd13b9ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
 --- !u!4 &7429271727056993135 stripped
@@ -953,6 +958,10 @@ PrefabInstance:
     - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_Name
       value: flowers-window (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4181911268084690, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1002,6 +1011,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65441225478349866, guid: 12806afb936964845a50813d99e35a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12806afb936964845a50813d99e35a76, type: 3}
 --- !u!4 &7429427118734496050 stripped
@@ -1020,6 +1034,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1051,7 +1069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1074,6 +1092,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570202650901701 stripped
@@ -1092,6 +1115,10 @@ PrefabInstance:
     - target: {fileID: 1018846311968998, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_Name
       value: house-wall-door (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018846311968998, guid: 1e212581da1d146fca5233289052a32f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1123,7 +1150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4942520803145756, guid: 1e212581da1d146fca5233289052a32f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1138,6 +1165,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64982856932745286, guid: 1e212581da1d146fca5233289052a32f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e212581da1d146fca5233289052a32f, type: 3}
 --- !u!4 &7423608689862276689 stripped
@@ -1156,6 +1188,10 @@ PrefabInstance:
     - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_Name
       value: house-roof-edge (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1187,7 +1223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalScale.z
@@ -1211,6 +1247,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64022207616140380, guid: 47dd058b3899d4c92aa4ed13fd13b9ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
 --- !u!4 &7429271727490390224 stripped
@@ -1229,6 +1270,10 @@ PrefabInstance:
     - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_Name
       value: house-wall-corner (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1260,7 +1305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalScale.z
@@ -1279,6 +1324,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64985733809778718, guid: 49f7d5bd99bdc485a85e1557eee2f199,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
 --- !u!4 &7429547883111231225 stripped
@@ -1297,6 +1347,10 @@ PrefabInstance:
     - target: {fileID: 1859278086724898, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_Name
       value: house-door-window (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859278086724898, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1328,7 +1382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1341,6 +1395,11 @@ PrefabInstance:
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65601591066977742, guid: f24363fb5feb54c44bd03efaeef0263b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
@@ -1360,6 +1419,10 @@ PrefabInstance:
     - target: {fileID: 1940401292856562, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_Name
       value: house-wall-window (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940401292856562, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1391,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1406,6 +1469,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65430530745380932, guid: 29272a53fba5e4d57ae09c060882d015,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
 --- !u!4 &7423320478406267651 stripped
@@ -1424,6 +1492,10 @@ PrefabInstance:
     - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_Name
       value: flowers-window (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4181911268084690, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1473,6 +1545,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65441225478349866, guid: 12806afb936964845a50813d99e35a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12806afb936964845a50813d99e35a76, type: 3}
 --- !u!4 &7429427120026981825 stripped
@@ -1491,6 +1568,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1522,7 +1603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1545,6 +1626,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570202102654506 stripped
@@ -1563,6 +1649,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1594,7 +1684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1617,6 +1707,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570202125271615 stripped
@@ -1635,6 +1730,10 @@ PrefabInstance:
     - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_Name
       value: house-roof-edge (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1666,7 +1765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalScale.z
@@ -1690,6 +1789,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64022207616140380, guid: 47dd058b3899d4c92aa4ed13fd13b9ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
 --- !u!4 &7429271728010705111 stripped
@@ -1708,6 +1812,10 @@ PrefabInstance:
     - target: {fileID: 1726736209610512, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
       propertyPath: m_Name
       value: house-wall-door-garage (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726736209610512, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4079924287316550, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1739,7 +1847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4079924287316550, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4079924287316550, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1754,6 +1862,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64386960840920372, guid: 8057c8ff954aa4ec3afd2e48a73e1637,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8057c8ff954aa4ec3afd2e48a73e1637, type: 3}
 --- !u!4 &7429256428759997117 stripped
@@ -1772,6 +1885,10 @@ PrefabInstance:
     - target: {fileID: 1737144855064878, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_Name
       value: house-wall-window-two (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737144855064878, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1803,7 +1920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4703884277553452, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1818,6 +1935,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65808424292096552, guid: 6c9240d65ec01421abf47aa7ff348fef,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c9240d65ec01421abf47aa7ff348fef, type: 3}
 --- !u!4 &7423284444232043227 stripped
@@ -1836,6 +1958,10 @@ PrefabInstance:
     - target: {fileID: 1946719914063008, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
       propertyPath: m_Name
       value: door-garage (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946719914063008, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4365313187520336, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1867,7 +1993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4365313187520336, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4365313187520336, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1880,6 +2006,11 @@ PrefabInstance:
     - target: {fileID: 4365313187520336, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65657127825585468, guid: 7e0c2d632e7c44a57b55fa1148c9be68,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0c2d632e7c44a57b55fa1148c9be68, type: 3}
@@ -1899,6 +2030,10 @@ PrefabInstance:
     - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_Name
       value: house-roof (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1930,7 +2065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1950,6 +2085,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 11a8c080607cf47c299aff53087e0334, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215133677983135 stripped
@@ -1968,6 +2108,10 @@ PrefabInstance:
     - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_Name
       value: house-wall-corner (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1999,7 +2143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2014,6 +2158,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64985733809778718, guid: 49f7d5bd99bdc485a85e1557eee2f199,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
 --- !u!4 &7429547884320736914 stripped
@@ -2032,6 +2181,10 @@ PrefabInstance:
     - target: {fileID: 1940401292856562, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_Name
       value: house-wall-window (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940401292856562, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2063,7 +2216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4667780278704948, guid: 29272a53fba5e4d57ae09c060882d015, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2097,6 +2250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: house-roof (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.069996
@@ -2127,7 +2284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2147,6 +2304,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 11a8c080607cf47c299aff53087e0334, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215134273268324 stripped
@@ -2165,6 +2327,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2196,7 +2362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2219,6 +2385,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570201646270714 stripped
@@ -2237,6 +2408,10 @@ PrefabInstance:
     - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_Name
       value: house-wall (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082590695895864, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2268,7 +2443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4320305326443948, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2291,6 +2466,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 65976176425844336, guid: 91f25435ba3bc40d79f6f617363886d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f25435ba3bc40d79f6f617363886d8, type: 3}
 --- !u!4 &7429570201316612996 stripped
@@ -2309,6 +2489,10 @@ PrefabInstance:
     - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_Name
       value: house-roof (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2340,7 +2524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2360,6 +2544,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 11a8c080607cf47c299aff53087e0334, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215134041298353 stripped
@@ -2378,6 +2567,10 @@ PrefabInstance:
     - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_Name
       value: house-wall-corner (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246949516745636, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2409,7 +2602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4351422832886076, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
       propertyPath: m_LocalScale.z
@@ -2432,6 +2625,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 1fff089ce117d4f04a4c4fb00168f400, type: 2}
+    - target: {fileID: 64985733809778718, guid: 49f7d5bd99bdc485a85e1557eee2f199,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49f7d5bd99bdc485a85e1557eee2f199, type: 3}
 --- !u!4 &7429547883944955412 stripped
@@ -2450,6 +2648,10 @@ PrefabInstance:
     - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_Name
       value: house-roof (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430325860273126, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2481,7 +2683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4773129627738864, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2511,6 +2713,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64642983349746968, guid: 513f6ba8cd6a44d10b5129836d70c8a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 513f6ba8cd6a44d10b5129836d70c8a5, type: 3}
 --- !u!4 &7423215134007122388 stripped
@@ -2529,6 +2736,10 @@ PrefabInstance:
     - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_Name
       value: house-roof-edge (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445949814669910, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2560,7 +2771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4055759243717560, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2580,6 +2791,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
+    - target: {fileID: 64022207616140380, guid: 47dd058b3899d4c92aa4ed13fd13b9ab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dd058b3899d4c92aa4ed13fd13b9ab, type: 3}
 --- !u!4 &7429271728551598982 stripped
@@ -2598,6 +2814,10 @@ PrefabInstance:
     - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_Name
       value: flowers-window (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614220683297960, guid: 12806afb936964845a50813d99e35a76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4181911268084690, guid: 12806afb936964845a50813d99e35a76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2647,6 +2867,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65441225478349866, guid: 12806afb936964845a50813d99e35a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12806afb936964845a50813d99e35a76, type: 3}
 --- !u!4 &7429427120442486737 stripped
@@ -2665,6 +2890,10 @@ PrefabInstance:
     - target: {fileID: 1859278086724898, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_Name
       value: house-door-window (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859278086724898, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2696,7 +2925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2709,6 +2938,11 @@ PrefabInstance:
     - target: {fileID: 4091989684319152, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65601591066977742, guid: f24363fb5feb54c44bd03efaeef0263b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24363fb5feb54c44bd03efaeef0263b, type: 3}

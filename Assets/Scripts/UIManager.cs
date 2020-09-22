@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     }
 
     void UpdateScore()
-    {
+    { 
         scoreText.text = "Score: " + ScoreManager.Instance.totalScore;
 
     }
