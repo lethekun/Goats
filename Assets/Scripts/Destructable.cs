@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityScript.Steps;
 
 public class Destructable : MonoBehaviour
 {
     [SerializeField] GameObject explosionParticle;
+    [SerializeField] GameObject cubicParticle;
     Vector3 startTransform;
     Rigidbody _rb = null;
     [SerializeField]
@@ -23,10 +25,11 @@ public class Destructable : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Ball"))
+        if (collision.gameObject.CompareTag("Ball"))
         {
+            ActivateCubicParticles();
             OnObstacleDestroyed?.Invoke(reward);
-            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity),2f);
+            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
             ApplyExplosionForce();
             Destroy(gameObject, 1f);
         }
@@ -36,9 +39,11 @@ public class Destructable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Melee"))
         {
+            ActivateCubicParticles();
+            ActivateExplosionParticles();
             OnObstacleDestroyed?.Invoke(reward);
-            GetComponentInChildren<ProceduralMeshExploder.MeshExploder>().Explode();
-            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
+            GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
+            
             //kendini yoket
             Destroy(gameObject);
         }
@@ -47,5 +52,18 @@ public class Destructable : MonoBehaviour
     public void ApplyExplosionForce()
     {
         _rb.AddExplosionForce(explosionForce, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.5f), explosionRadius, 0.1f);
+    }
+
+    void ActivateExplosionParticles()
+    {
+        if(explosionParticle != null)
+            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 1f);
+    }
+
+    public void ActivateCubicParticles()
+    {
+        if (cubicParticle != null)
+            Destroy(Instantiate(cubicParticle, transform.position, cubicParticle.transform.rotation), 1f);
+        
     }
 }
