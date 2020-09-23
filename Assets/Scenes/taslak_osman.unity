@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
+  m_AmbientSkyColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -646,6 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -955,6 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -999,6 +1002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -1124,6 +1128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -1529,6 +1534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -1585,6 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -1629,6 +1636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -1673,6 +1681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -2135,6 +2144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -2179,6 +2189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -2320,6 +2331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3002,103 +3014,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
---- !u!1001 &187255201
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 740857353}
-    m_Modifications:
-    - target: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_Name
-      value: crate-box
-      objectReference: {fileID: 0}
-    - target: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_TagString
-      value: Destructable
-      objectReference: {fileID: 0}
-    - target: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6799998
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.1151114
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -21.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300558, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6e3ac6e47b4d7a44685dfef9bf209413, type: 2}
-    - target: {fileID: 2300558, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0de74cacf6310c64ca1b6862ba4b219c, type: 2}
-    - target: {fileID: 2300558, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300558, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 862cc76e7c4d26a46a30c4bb7290d771, type: 3}
+--- !u!4 &187631241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+    type: 3}
+  m_PrefabInstance: {fileID: 7818489726530399853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &194312151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3266,6 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3362,7 +3284,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3476,6 +3398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3520,6 +3443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3564,6 +3488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3608,6 +3533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3745,6 +3671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3789,6 +3716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3914,6 +3842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -3933,50 +3862,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!1 &315043938
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 315043940}
-  - component: {fileID: 315043939}
-  m_Layer: 0
-  m_Name: ScoreManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &315043939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315043938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff4b39ec0a1cc6649881823d095d8ce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalScore: 0
---- !u!4 &315043940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315043938}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6887506, y: 3.9126873, z: 11.976688}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &328167356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771,
@@ -4002,6 +3887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4127,6 +4013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4171,6 +4058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4267,7 +4155,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4306,6 +4194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4350,6 +4239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4588,6 +4478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4716,6 +4607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4760,6 +4652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -4885,6 +4778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -5333,7 +5227,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5366,6 +5260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -5503,6 +5398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -5971,7 +5867,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6101,6 +5997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6145,6 +6042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6355,6 +6253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6399,6 +6298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6495,7 +6395,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6682,6 +6582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6726,6 +6627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -6851,6 +6753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -7256,6 +7159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -7284,6 +7188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -7431,50 +7336,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 363652453}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &725482467 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771,
-    type: 3}
-  m_PrefabInstance: {fileID: 187255201}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &725482468
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725482467}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &725482469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725482467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b79758a9abaad7448ca5ee3bf665f2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
-  explosionForce: 1500
-  explosionRadius: 2
-  reward: 10
---- !u!4 &725482472 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 413480, guid: 862cc76e7c4d26a46a30c4bb7290d771,
-    type: 3}
-  m_PrefabInstance: {fileID: 187255201}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733508590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771,
@@ -7500,6 +7361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -7683,6 +7545,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: House1
       objectReference: {fileID: 0}
+    - target: {fileID: 7429516976489981737, guid: 68bc38ea60d4efb429298062b97bf339,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1.1641532e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429516976489981737, guid: 68bc38ea60d4efb429298062b97bf339,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1.1641532e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429516976489981737, guid: 68bc38ea60d4efb429298062b97bf339,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429516976489981737, guid: 68bc38ea60d4efb429298062b97bf339,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.355
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68bc38ea60d4efb429298062b97bf339, type: 3}
 --- !u!1 &740857352
@@ -7722,7 +7604,7 @@ Transform:
   - {fileID: 1389933526}
   - {fileID: 1533352308}
   - {fileID: 1403503322}
-  - {fileID: 725482472}
+  - {fileID: 187631241}
   - {fileID: 1023640144}
   - {fileID: 980430732}
   - {fileID: 979315413}
@@ -7865,7 +7747,7 @@ Transform:
   - {fileID: 1964948823}
   - {fileID: 1900350627}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746018269 stripped
 GameObject:
@@ -7892,6 +7774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -7911,98 +7794,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!1 &751791752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 751791754}
-  - component: {fileID: 751791753}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &751791753
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751791752}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &751791754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751791752}
-  m_LocalRotation: {x: 0.14676142, y: 0.30542472, z: -0.015667496, w: 0.9407079}
-  m_LocalPosition: {x: 11.61, y: 39.68, z: 129.73}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 1243.4, y: -143.5, z: 903.6}
 --- !u!4 &752889948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4322010636155444, guid: 0eb6e1c93aab2ec47b5068e5e2119d81,
@@ -8086,7 +7877,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8748,6 +8539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -8897,7 +8689,7 @@ PrefabInstance:
     - target: {fileID: 6090578529546861520, guid: ed1f5d397e9957d478862dedaab6fdd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6090578529546861520, guid: ed1f5d397e9957d478862dedaab6fdd6,
         type: 3}
@@ -9098,6 +8890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -9239,6 +9032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -9544,6 +9338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -9752,6 +9547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -10238,6 +10034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11258,6 +11055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11296,6 +11094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11611,6 +11410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11741,6 +11541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11785,6 +11586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11829,6 +11631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -11873,6 +11676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12004,6 +11808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12048,6 +11853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12113,7 +11919,7 @@ Transform:
   - {fileID: 1424108793}
   - {fileID: 715457730}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1118998303 stripped
 Transform:
@@ -12146,6 +11952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12190,6 +11997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12234,6 +12042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12359,6 +12168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12403,6 +12213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12447,6 +12258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12572,6 +12384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -12736,7 +12549,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1192937095
 PrefabInstance:
@@ -13300,6 +13113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13344,6 +13158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13394,6 +13209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13522,6 +13338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13566,6 +13383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13707,6 +13525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13838,6 +13657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -13882,6 +13702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -14003,6 +13824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -14192,6 +14014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -14486,10 +14309,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: tile-road-straight (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1189697016854918, guid: e1304517d24a34d348e58d276929bd24, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4785179486904736, guid: e1304517d24a34d348e58d276929bd24, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6887506
@@ -14534,30 +14353,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4785179486904736, guid: e1304517d24a34d348e58d276929bd24, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
-        type: 3}
-      propertyPath: m_Materials.Array.data[3]
-      value: 
-      objectReference: {fileID: 2100000, guid: 12ca79d1906ac624994fa91e85880fb8, type: 2}
-    - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
-        type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: 2100000, guid: c48ed0c67054fc24da0ac1cced5a308c, type: 2}
-    - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
-    - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 87ff71ffc286b91449d2296928632aed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1304517d24a34d348e58d276929bd24, type: 3}
 --- !u!1 &1326629350 stripped
@@ -14585,6 +14380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -14799,6 +14595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -14849,6 +14646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15041,6 +14839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15301,6 +15100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15351,6 +15151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15376,98 +15177,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 764998548}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1410789111
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1410789113}
-  - component: {fileID: 1410789112}
-  m_Layer: 0
-  m_Name: Directional Light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1410789112
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410789111}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1410789113
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410789111}
-  m_LocalRotation: {x: 0.7065783, y: -0.17243443, z: -0.5028429, w: 0.46707863}
-  m_LocalPosition: {x: -63.83, y: 16.48, z: 4.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 150.88, y: 86.19501, z: 54.749004}
 --- !u!1 &1421171597
 GameObject:
   m_ObjectHideFlags: 0
@@ -15812,6 +15521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15856,6 +15566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15900,6 +15611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15944,6 +15656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -15988,6 +15701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -16372,6 +16086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -16416,6 +16131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -16435,51 +16151,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!1 &1508252826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1508252828}
-  - component: {fileID: 1508252827}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1508252827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508252826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc6e196a66b71644b65497a0a965053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 280993480}
-  score: {fileID: 280993480}
---- !u!4 &1508252828
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508252826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6887506, y: 3.9126873, z: 11.976688}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1529516084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4322010636155444, guid: 0eb6e1c93aab2ec47b5068e5e2119d81,
@@ -16511,6 +16182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -16977,6 +16649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -17102,6 +16775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -17949,6 +17623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -18155,6 +17830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -18199,6 +17875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -18569,6 +18246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -18613,6 +18291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -18657,6 +18336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -19215,6 +18895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -19556,6 +19237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -19855,6 +19537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -19980,6 +19663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20283,6 +19967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20327,6 +20012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20458,6 +20144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20502,6 +20189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20798,7 +20486,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 579080bda9f89ee42a5447d6d997e266, type: 2}
+      objectReference: {fileID: 2100000, guid: 4331118ee3c37a54bbcb89d532e96cba, type: 2}
     - target: {fileID: 23970550961569836, guid: e1304517d24a34d348e58d276929bd24,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20831,6 +20519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -20968,6 +20657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -21012,6 +20702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -21056,6 +20747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -21100,6 +20792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -21599,6 +21292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -21892,36 +21586,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d68de2c410e54774586d9bf2b2e5e9b0, type: 3}
---- !u!1 &2060566346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2060566347}
-  m_Layer: 0
-  m_Name: Ball Container
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2060566347
+--- !u!4 &2060566347 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+    type: 3}
+  m_PrefabInstance: {fileID: 7038621085297428946}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060566346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0600988, y: 4.8385487, z: 0.5735607}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2061017043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 164854, guid: 862cc76e7c4d26a46a30c4bb7290d771,
@@ -21947,6 +21617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
+  cubicParticle: {fileID: 0}
   explosionForce: 1500
   explosionRadius: 2
   reward: 10
@@ -22075,3 +21746,289 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1534399833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5204452241755912569
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5204452241525672219, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_Name
+      value: ScoreManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6887506
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9126873
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.976688
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204452241525672221, guid: 2a7cdfff0354b394e9cfcb671acfac76,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a7cdfff0354b394e9cfcb671acfac76, type: 3}
+--- !u!1001 &7038621085297428946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7038621085460067992, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_Name
+      value: Ball Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0600988
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.8385487
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5735607
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038621085460067993, guid: f6376d003389717409f9fd91aba10b30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6376d003389717409f9fd91aba10b30, type: 3}
+--- !u!1001 &7401341304884165912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7401341303942668674, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 280993480}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 280993480}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6887506
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9126873
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.976688
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74e86a5280085654fa1c92d0a4d1ed3e, type: 3}
+--- !u!1001 &7818489726530399853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 740857353}
+    m_Modifications:
+    - target: {fileID: 7818489726411301946, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_Name
+      value: crate-box
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6799998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.1151114
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7818489726411581668, guid: f49526a98352cd8499c1e4df4c173115,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f49526a98352cd8499c1e4df4c173115, type: 3}
