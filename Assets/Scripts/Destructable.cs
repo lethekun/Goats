@@ -63,7 +63,7 @@ public class Destructable : MonoBehaviour
     public void ActivateCubicParticles()
     {
         if (cubicParticle != null)
-            Destroy(Instantiate(cubicParticle, transform.position, cubicParticle.transform.rotation), 1f);
+            Destroy(Instantiate(cubicParticle, transform.position, cubicParticle.transform.rotation), 2f);
         
     }
 }
