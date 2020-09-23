@@ -6,15 +6,19 @@ using UnityScript.Steps;
 
 public class Destructable : MonoBehaviour
 {
+    public enum CubeColor { Red, Green, Blue, Yellow}
+    
+    [SerializeField]
+    public CubeColor cubeColor;
+    
     [SerializeField] GameObject explosionParticle;
-    [SerializeField] GameObject cubicParticle;
+    [SerializeField] GameObject puffParticle;
     Vector3 startTransform;
     Rigidbody _rb = null;
     [SerializeField]
     float explosionForce = 1500f;
     [SerializeField]
     float explosionRadius = 2f;
-    public static event Action<int> OnObstacleDestroyed;
 
     private void Awake()
     {
@@ -25,13 +29,13 @@ public class Destructable : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ball"))
+        
+        if (collision.gameObject.CompareTag("Player"))
         {
-            ActivateCubicParticles();
-            OnObstacleDestroyed?.Invoke(reward);
-            Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 2f);
-            ApplyExplosionForce();
-            Destroy(gameObject, 1f);
+            ActivatePuffParticles();
+            ActivateExplosionParticles();
+            GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
+            Destroy(gameObject);
         }
     }
 
@@ -39,13 +43,10 @@ public class Destructable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Melee"))
         {
-            ActivateCubicParticles();
-            ActivateExplosionParticles();
-            OnObstacleDestroyed?.Invoke(reward);
-            GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
-            
-            //kendini yoket
-            Destroy(gameObject);
+            //ActivatePuffParticles();
+            //ActivateExplosionParticles();
+            //GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
+            //Destroy(gameObject);
         }
     }
 
@@ -60,10 +61,9 @@ public class Destructable : MonoBehaviour
             Destroy(Instantiate(explosionParticle, transform.position, Quaternion.identity), 1f);
     }
 
-    public void ActivateCubicParticles()
+    public void ActivatePuffParticles()
     {
-        if (cubicParticle != null)
-            Destroy(Instantiate(cubicParticle, transform.position, cubicParticle.transform.rotation), 2f);
-        
+        if (puffParticle != null)
+            Destroy(Instantiate(puffParticle, transform.position, puffParticle.transform.rotation), 1f);        
     }
 }

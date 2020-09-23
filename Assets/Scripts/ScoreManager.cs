@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     {
         _instance = this;
         DontDestroyOnLoad(gameObject);
-        Destructable.OnObstacleDestroyed += AddScore;
+        PlayerInteraction.OnObstacleDestroyed += AddScore;
     }
 
     public void AddScore(int scoreToAdd)
