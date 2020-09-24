@@ -9,15 +9,28 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     TMP_Text scoreText, comboText;
+    [SerializeField] Transform Player;
+    [SerializeField] Transform EndLine;
+    [SerializeField] Slider slider;
+
+    float maxDistance;
 
 
 
     void Awake()
     {
+        maxDistance = getDistance();
         ScoreManager.OnScoreChanged += UpdateScore;
         PlayerInteraction.OnObstacleDestroyed += BoomBoomScore;
     }
-
+    private void Update()
+    {
+        if(Player.position.z <= maxDistance && Player.position.z <= EndLine.position.z)
+        {
+            float distance = 1 - (getDistance() / maxDistance);
+            setProgress(distance);
+        }
+    }
     void UpdateScore()
     { 
         scoreText.text = "Score: " + ScoreManager.Instance.totalScore;
@@ -38,5 +51,14 @@ public class UIManager : MonoBehaviour
     void DisableComboText()
     {
         comboText.DOFade(0, .2f);
+    }
+
+    float getDistance()
+    {
+        return Vector3.Distance(Player.position, EndLine.position);
+    }
+    void setProgress(float p)
+    {
+        slider.value = p;
     }
 }
