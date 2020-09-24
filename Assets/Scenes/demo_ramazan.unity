@@ -1725,6 +1725,7 @@ PrefabInstance:
     m_Modifications:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 7736715080975940981, guid: 11db2bc26ffa1b54d8cf9832b87a453f,
         type: 3}
       propertyPath: m_Name
@@ -1734,6 +1735,8 @@ PrefabInstance:
       propertyPath: ignoredLayer.m_Bits
       value: 32
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
     - target: {fileID: 1231703462, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.5
@@ -2604,9 +2607,12 @@ Transform:
   m_PrefabInstance: {fileID: 257725466}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &664569757
 >>>>>>> c1ae5eeee38746c6fc18fcd6a46defafb5b6efc7
 =======
+=======
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
 --- !u!224 &659483603 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6090578528578284650, guid: ed1f5d397e9957d478862dedaab6fdd6,
@@ -4035,14 +4041,20 @@ Transform:
   m_PrefabInstance: {fileID: 906495851}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
 --- !u!1 &910474925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7652792444631860963, guid: ed1f5d397e9957d478862dedaab6fdd6,
     type: 3}
   m_PrefabInstance: {fileID: 1437666191}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 >>>>>>> parent of 3238f1e... efso commit
+=======
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
 --- !u!114 &910474927 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
@@ -4050,19 +4062,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1437666191}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 0}
 =======
   m_GameObject: {fileID: 910474925}
 >>>>>>> parent of 3238f1e... efso commit
+=======
+  m_GameObject: {fileID: 910474925}
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &910540655
 >>>>>>> c1ae5eeee38746c6fc18fcd6a46defafb5b6efc7
 =======
+=======
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
 --- !u!95 &910474929
 Animator:
   serializedVersion: 3
@@ -6323,6 +6342,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 88083056}
     - target: {fileID: 6090578529546861521, guid: ed1f5d397e9957d478862dedaab6fdd6,
+<<<<<<< HEAD
+=======
         type: 3}
       propertyPath: m_SortingOrder
       value: 15
@@ -6332,9 +6353,128 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861521, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 49878257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861521, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861522, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861522, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861522, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861523, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529546861532, guid: ed1f5d397e9957d478862dedaab6fdd6,
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 6090578529546861521, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: -1
+=======
+    - target: {fileID: 6090578529996716566, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529996716566, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 186.33426
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529996716566, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 138.20258
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090578529996716566, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 56.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471910668517568410, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 332
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 148
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 327.62167
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 197.89307
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7652792444631860963, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537171959844286785, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
+      objectReference: {fileID: 0}
 <<<<<<< HEAD
     - target: {fileID: 7736715080976216491, guid: 11db2bc26ffa1b54d8cf9832b87a453f,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -6343,6 +6483,46 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8e286d59564648e4c9c08b06fe6fb35d, type: 2}
+=======
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_text
+      value: "Combo\n x1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 55
+      objectReference: {fileID: 0}
+>>>>>>> parent of c1ae5ee... Add: Chibi, MusicManager, TapIndicator
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11db2bc26ffa1b54d8cf9832b87a453f, type: 3}
 --- !u!4 &1210815093 stripped
@@ -11333,11 +11513,6 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 962854992}
-    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
-        type: 3}
-      propertyPath: MovementIndicator
-      value: 
-      objectReference: {fileID: 1251107341}
     - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
         type: 3}
       propertyPath: m_LocalPosition.x

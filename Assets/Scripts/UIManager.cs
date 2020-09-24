@@ -12,16 +12,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] Transform Player;
     [SerializeField] Transform EndLine;
     [SerializeField] Slider slider;
-    [SerializeField] GameObject MovementIndicator;
 
     float maxDistance;
+
+
 
     void Awake()
     {
         maxDistance = getDistance();
         ScoreManager.OnScoreChanged += UpdateScore;
         PlayerInteraction.OnObstacleDestroyed += BoomBoomScore;
-        InputController.mousePressed += HideMovementIndicator;
     }
     private void Update()
     {
@@ -60,18 +60,5 @@ public class UIManager : MonoBehaviour
     void setProgress(float p)
     {
         slider.value = p;
-    }
-
-    void HideMovementIndicator()
-    {
-        InputController.mousePressed -= HideMovementIndicator;
-        MovementIndicator.SetActive(false);
-    }
-
-    private void OnDisable()
-    {
-        InputController.mousePressed -= HideMovementIndicator;
-        ScoreManager.OnScoreChanged -= UpdateScore;
-        PlayerInteraction.OnObstacleDestroyed -= BoomBoomScore;
     }
 }
