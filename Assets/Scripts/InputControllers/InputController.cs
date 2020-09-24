@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour
 {
     private float _horz;
     private float _ver;
-    public LayerMask ignoredLayer;
+
     public float Horz { get { return _horz; } }
     public static event Action mousePressed;
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class InputController : MonoBehaviour
             mousePressed?.Invoke();
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo,Mathf.Infinity,~ignoredLayer))
+            if (Physics.Raycast(ray, out hitInfo))
             {
                 _horz = hitInfo.point.x;
             }
