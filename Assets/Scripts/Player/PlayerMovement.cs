@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _rb;
+    private Animator _animator;
     private InputController _input;
     private TouchController _touch;
     public float forwardSpeed = 5f;
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-
+        _animator = GetComponent<Animator>();
         _input = GetComponent<InputController>();
         _touch = GetComponent<TouchController>();
         InputController.mousePressed += WaitForFirstTap;
@@ -55,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     void WaitForFirstTap()
     {
         firstTapDone = true;
+        _animator.SetTrigger("BeginMoving");
         InputController.mousePressed -= WaitForFirstTap;
     }
 

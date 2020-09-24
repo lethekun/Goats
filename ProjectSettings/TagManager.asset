@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Undestructable
   - Melee
+  - FinishLine
   layers:
   - Default
   - TransparentFX

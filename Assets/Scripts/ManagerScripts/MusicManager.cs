@@ -23,13 +23,19 @@ public class MusicManager : MonoBehaviour
             DestroyImmediate(gameObject);
         else
             _instance = this;
-        
-        DontDestroyOnLoad(gameObject);
+        InputController.mousePressed += StartMusic;
     }
 
-    // Update is called once per frame
-    void Update()
+    void StartMusic()
     {
-        
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+        audioSource.loop = true;
+        InputController.mousePressed -= StartMusic;
+    }
+
+    private void OnDisable()
+    {
+        InputController.mousePressed -= StartMusic;
     }
 }

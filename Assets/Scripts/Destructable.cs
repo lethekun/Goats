@@ -41,12 +41,12 @@ public class Destructable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Melee"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            //ActivatePuffParticles();
-            //ActivateExplosionParticles();
-            //GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
-            //Destroy(gameObject);
+            ActivatePuffParticles();
+            ActivateExplosionParticles();
+            GetComponentInChildren<ProceduralMeshExploder.MeshExploder>()?.Explode();
+            Destroy(gameObject);
         }
     }
 

@@ -14,7 +14,6 @@ public class PlayerInteraction : MonoBehaviour
     GameObject explosionParticle;
 
     [SerializeField] TMP_Text comboText;
-    [SerializeField] TMP_Text osman;
 
 
     Destructable.CubeColor currentCubeColor;
@@ -25,11 +24,11 @@ public class PlayerInteraction : MonoBehaviour
     int comboCount = 0;
 
     public static event Action<int,int> OnObstacleDestroyed;
+    public static event Action OnLevelFinished;
     private void Start()
     {
         animator = GetComponent<Animator>();
         comboText.enabled = false;
-
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -37,15 +36,24 @@ public class PlayerInteraction : MonoBehaviour
         {
             AfterDeathSettings();
         }
+    }
 
-        if (collision.gameObject.CompareTag("Destructable"))
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("FinishLine"))
         {
-            Destructable cube = collision.gameObject.GetComponent<Destructable>();
-            
-            if(currentCubeColor != cube.cubeColor)
+            AfterFinishSettings();
+            OnLevelFinished?.Invoke();
+        }
+
+        if (other.gameObject.CompareTag("Destructable"))
+        {
+            Destructable cube = other.gameObject.GetComponent<Destructable>();
+
+            if (currentCubeColor != cube.cubeColor)
             {
                 comboCount = 1;
-                _audio.pitch = 1f;
+                //_audio.pitch = 1f;
                 _audio.PlayOneShot(_audio.clip);
                 currentCubeColor = cube.cubeColor;
 
@@ -53,22 +61,27 @@ public class PlayerInteraction : MonoBehaviour
             else
             {
                 comboCount++;
-                _audio.pitch *= 1f;
+                //_audio.pitch *= 1f;
                 _audio.PlayOneShot(_audio.clip);
-                //StartCoroutine(BoomBoomScore());
             }
 
-            OnObstacleDestroyed?.Invoke(cube.reward,comboCount);
+            OnObstacleDestroyed?.Invoke(cube.reward, comboCount);
         }
     }
-    
     void AfterDeathSettings()
     {
-        animator.SetBool("isDead", true);
+        animator.SetTrigger("isDead");
         GetComponent<PlayerMovement>().enabled = false;
         Camera.main.GetComponent<CameraMovement>().enabled = false;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
 
+    void AfterFinishSettings()
+    {
+        animator.SetTrigger("HasFinished");
+        GetComponent<PlayerMovement>().enabled = false;
+        Camera.main.GetComponent<CameraMovement>().enabled = false;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+    }
    
 }

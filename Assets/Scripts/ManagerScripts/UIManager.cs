@@ -8,7 +8,7 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
-    TMP_Text scoreText, comboText;
+    TMP_Text scoreText, comboText, levelFinishedText;
     [SerializeField] Transform Player;
     [SerializeField] Transform EndLine;
     [SerializeField] Slider slider;
@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
         maxDistance = getDistance();
         ScoreManager.OnScoreChanged += UpdateScore;
         PlayerInteraction.OnObstacleDestroyed += BoomBoomScore;
+        PlayerInteraction.OnLevelFinished += OnFinishHandler;
         InputController.mousePressed += HideMovementIndicator;
     }
     private void Update()
@@ -50,7 +51,7 @@ public class UIManager : MonoBehaviour
 
     void DisableComboText()
     {
-        comboText.DOFade(0, .2f);
+        comboText.DOFade(0, 2f);
     }
 
     float getDistance()
@@ -68,10 +69,18 @@ public class UIManager : MonoBehaviour
         MovementIndicator.SetActive(false);
     }
 
+    void OnFinishHandler()
+    {
+        scoreText.DOFade(0, .2f);
+        comboText.DOFade(0, .2f);
+        levelFinishedText.DOFade(1f,0.2f);
+    }
+
     private void OnDisable()
     {
         InputController.mousePressed -= HideMovementIndicator;
         ScoreManager.OnScoreChanged -= UpdateScore;
         PlayerInteraction.OnObstacleDestroyed -= BoomBoomScore;
+        PlayerInteraction.OnLevelFinished -= OnFinishHandler;
     }
 }
