@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float antiShakeMargin = 0.1f;
     [SerializeField]
     bool isMobile = false;
+    bool firstTapDone = false;
 
     void Awake()
     {
@@ -22,11 +23,14 @@ public class PlayerMovement : MonoBehaviour
 
         _input = GetComponent<InputController>();
         _touch = GetComponent<TouchController>();
+        InputController.mousePressed += WaitForFirstTap;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
+        if (!firstTapDone) return;
+
         float horzDif;
         if (isMobile)
         {
@@ -46,5 +50,16 @@ public class PlayerMovement : MonoBehaviour
         
         transform.position += move;
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -xPosBoundary, +xPosBoundary), transform.position.y, transform.position.z);
+    }
+
+    void WaitForFirstTap()
+    {
+        firstTapDone = true;
+        InputController.mousePressed -= WaitForFirstTap;
+    }
+
+    private void OnDisable()
+    {
+        InputController.mousePressed -= WaitForFirstTap;
     }
 }
