@@ -66,6 +66,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         animator.SetBool("isDead", true);
         GetComponent<PlayerMovement>().enabled = false;
+        GetComponent<PlayerShooter>().enabled = false;
         Camera.main.GetComponent<CameraMovement>().enabled = false;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
