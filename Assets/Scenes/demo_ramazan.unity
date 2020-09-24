@@ -1796,6 +1796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1231703462, guid: 8dce9ba2af64a42489243c460ed2889a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 953143722027617469, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1869,7 +1873,7 @@ PrefabInstance:
     - target: {fileID: 5206314983590843783, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: antiShakeMargin
-      value: 0.05
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5206314983590843837, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
@@ -5971,6 +5975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.spaceCount
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614252037839676797, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1f5d397e9957d478862dedaab6fdd6, type: 3}
