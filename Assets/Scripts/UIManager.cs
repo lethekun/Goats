@@ -7,8 +7,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     TMP_Text scoreText;
-    [SerializeField]
-    TMP_Text score;
+
 
 
     void Awake()

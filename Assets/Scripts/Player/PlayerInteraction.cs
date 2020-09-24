@@ -2,12 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class PlayerInteraction : MonoBehaviour
 {
+
+
     Animator animator;
     [SerializeField]
     GameObject explosionParticle;
+
+    [SerializeField] TMP_Text comboText;
+    [SerializeField] TMP_Text osman;
+
 
     Destructable.CubeColor currentCubeColor;
 
@@ -20,6 +28,8 @@ public class PlayerInteraction : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        comboText.enabled = false;
+
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -40,19 +50,31 @@ public class PlayerInteraction : MonoBehaviour
                 _audio.PlayOneShot(_audio.clip);
                 currentCubeColor = cube.cubeColor;
                 Debug.Log("Renk farklı. Yeni renk: " + cube.cubeColor.ToString());
+
             }
             else
             {
                 comboCount++;
-                _audio.pitch *= 1.1f;
+                _audio.pitch *= 1.03f;
                 _audio.PlayOneShot(_audio.clip);
-                Debug.Log("COMBO: " + cube.cubeColor.ToString() + " " + comboCount);
+                StartCoroutine(BoomBoomScore());
             }
 
             OnObstacleDestroyed?.Invoke(cube.reward*comboCount);
         }
     }
+    IEnumerator BoomBoomScore()
+    {
+        // comboText.transform.localScale *= 1.01f;
+        comboText.enabled = true;
+        comboText.text = "Combo x" + comboCount;
+        Animator animCombo = comboText.GetComponent<Animator>();
+        animCombo.SetTrigger("boom");
+        yield return new WaitForSeconds(.02f);
 
+
+
+    }
     void AfterDeathSettings()
     {
         animator.SetBool("isDead", true);
@@ -61,4 +83,6 @@ public class PlayerInteraction : MonoBehaviour
         Camera.main.GetComponent<CameraMovement>().enabled = false;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
+
+   
 }
