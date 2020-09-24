@@ -44,6 +44,7 @@ public class TouchController : MonoBehaviour
                 switch(touchPhase)
                 {
                     case TouchPhase.Began:
+                        posX = touchPos.x;
                         touchStartTime = Time.time;
                         break;
                     case TouchPhase.Moved:
@@ -52,14 +53,14 @@ public class TouchController : MonoBehaviour
                     case TouchPhase.Stationary:
                         posX = touchPos.x;
                         break;
-                    case TouchPhase.Ended:
-                        float timePassed = Time.time - touchStartTime;
-                        Debug.Log(timePassed);
-                        if(timePassed < tapTimeMargin)
-                        {
-                            OnTap?.Invoke();
-                        }
-                        break;
+                    //case TouchPhase.Ended:
+                    //    float timePassed = Time.time - touchStartTime;
+                    //    Debug.Log(timePassed);
+                    //    if(timePassed < tapTimeMargin)
+                    //    {
+                    //        OnTap?.Invoke();
+                    //    }
+                    //    break;
                 }
             }
         }

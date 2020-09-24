@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float forwardSpeed = 5f;
     public float horizontalSpeed = 1f;
     [SerializeField]
+    float antiShakeMargin = 0.1f;
+    [SerializeField]
     bool isMobile = false;
     void Awake()
     {
@@ -32,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
             horzDif = _input.Horz - transform.position.x;
         }
         
-        if (Mathf.Abs(horzDif) > 0.1f)
+        if (Mathf.Abs(horzDif) > antiShakeMargin)
             horzDif = Mathf.Sign(horzDif);
         else
             horzDif = 0f;
