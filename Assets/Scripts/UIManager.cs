@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
@@ -29,11 +31,11 @@ public class UIManager : MonoBehaviour
         comboText.text = "Combo x" + comboCount;
         Animator animCombo = comboText.GetComponent<Animator>();
         animCombo.SetTrigger("boom");
-        Invoke("DisableComboText", 2f);
+        Invoke("DisableComboText", 1f);
     }
 
     void DisableComboText()
     {
-        comboText.enabled = false;
+        comboText.DOFade(0, .2f);
     }
 }
