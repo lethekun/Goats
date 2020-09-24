@@ -40,7 +40,6 @@ public class PlayerInteraction : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Destructable"))
         {
-            Debug.Log("kutu ile etkileşime girildi.");
             Destructable cube = collision.gameObject.GetComponent<Destructable>();
             
             if(currentCubeColor != cube.cubeColor)
@@ -49,7 +48,6 @@ public class PlayerInteraction : MonoBehaviour
                 _audio.pitch = 1f;
                 _audio.PlayOneShot(_audio.clip);
                 currentCubeColor = cube.cubeColor;
-                Debug.Log("Renk farklı. Yeni renk: " + cube.cubeColor.ToString());
 
             }
             else

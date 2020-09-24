@@ -1866,6 +1866,11 @@ PrefabInstance:
       propertyPath: forwardSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5206314983590843783, guid: 8dce9ba2af64a42489243c460ed2889a,
+        type: 3}
+      propertyPath: antiShakeMargin
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 5206314983590843837, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: _audio
@@ -5926,6 +5931,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118919727205546464, guid: ed1f5d397e9957d478862dedaab6fdd6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7652792444631860963, guid: ed1f5d397e9957d478862dedaab6fdd6,
         type: 3}
