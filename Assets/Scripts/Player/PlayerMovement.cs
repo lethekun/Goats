@@ -10,9 +10,12 @@ public class PlayerMovement : MonoBehaviour
     public float forwardSpeed = 5f;
     public float horizontalSpeed = 1f;
     [SerializeField]
+    float xPosBoundary = 1f;
+    [SerializeField]
     float antiShakeMargin = 0.1f;
     [SerializeField]
     bool isMobile = false;
+
     void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -42,6 +45,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = new Vector3(horzDif * horizontalSpeed, 0f, forwardSpeed)*Time.smoothDeltaTime;
         
         transform.position += move;
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -1f, +1f), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -xPosBoundary, +xPosBoundary), transform.position.y, transform.position.z);
     }
 }
