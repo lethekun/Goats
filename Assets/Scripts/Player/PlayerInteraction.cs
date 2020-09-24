@@ -53,7 +53,7 @@ public class PlayerInteraction : MonoBehaviour
             else
             {
                 comboCount++;
-                _audio.pitch *= 1.03f;
+                _audio.pitch *= 1f;
                 _audio.PlayOneShot(_audio.clip);
                 //StartCoroutine(BoomBoomScore());
             }
