@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     {
         // comboText.transform.localScale *= 1.01f;
         CancelInvoke("DisableComboText");
+        comboText.DOFade(1, .1f);
         comboText.enabled = true;
         comboText.text = "Combo x" + comboCount;
         Animator animCombo = comboText.GetComponent<Animator>();
