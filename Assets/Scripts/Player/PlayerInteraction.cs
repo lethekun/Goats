@@ -24,7 +24,7 @@ public class PlayerInteraction : MonoBehaviour
 
     int comboCount = 0;
 
-    public static event Action<int> OnObstacleDestroyed;
+    public static event Action<int,int> OnObstacleDestroyed;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -55,24 +55,13 @@ public class PlayerInteraction : MonoBehaviour
                 comboCount++;
                 _audio.pitch *= 1.03f;
                 _audio.PlayOneShot(_audio.clip);
-                StartCoroutine(BoomBoomScore());
+                //StartCoroutine(BoomBoomScore());
             }
 
-            OnObstacleDestroyed?.Invoke(cube.reward*comboCount);
+            OnObstacleDestroyed?.Invoke(cube.reward,comboCount);
         }
     }
-    IEnumerator BoomBoomScore()
-    {
-        // comboText.transform.localScale *= 1.01f;
-        comboText.enabled = true;
-        comboText.text = "Combo x" + comboCount;
-        Animator animCombo = comboText.GetComponent<Animator>();
-        animCombo.SetTrigger("boom");
-        yield return new WaitForSeconds(.02f);
-
-
-
-    }
+    
     void AfterDeathSettings()
     {
         animator.SetBool("isDead", true);
