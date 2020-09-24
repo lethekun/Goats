@@ -1873,7 +1873,7 @@ PrefabInstance:
     - target: {fileID: 5206314983590843783, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
       propertyPath: antiShakeMargin
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5206314983590843837, guid: 8dce9ba2af64a42489243c460ed2889a,
         type: 3}
