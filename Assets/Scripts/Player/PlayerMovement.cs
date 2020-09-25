@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator _animator;
     private InputController _input;
     private TouchController _touch;
-    public float forwardSpeed = 5f;
+    public static float forwardSpeed = 6f;
     public float horizontalSpeed = 1f;
     [SerializeField]
     float xPosBoundary = 1f;

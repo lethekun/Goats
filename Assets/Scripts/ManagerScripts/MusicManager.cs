@@ -17,6 +17,14 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    private AudioClip[] clips;
+
+    private AudioSource _audioSource;
+
+    enum MusicStates { Intro, Outro}
+
+
     void Awake()
     {
         if (_instance)
@@ -24,14 +32,28 @@ public class MusicManager : MonoBehaviour
         else
             _instance = this;
         InputController.mousePressed += StartMusic;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void StartMusic()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
-        audioSource.loop = true;
+        _audioSource.clip = clips[0];
+        _audioSource.Play();
+        _audioSource.loop = false;
         InputController.mousePressed -= StartMusic;
+
+        StartCoroutine(PlayMusic());
+    }
+
+    IEnumerator PlayMusic()
+    {
+        while (_audioSource.isPlaying)
+            yield return null;
+
+        _audioSource.PlayOneShot(clips[1],1f);
+        _audioSource.clip = clips[2];
+        _audioSource.PlayDelayed(1.5f);
+        _audioSource.loop = true;
     }
 
     private void OnDisable()
