@@ -13,7 +13,7 @@ public class Destructable : MonoBehaviour
     public CubeColor cubeColor;
 
     Animator animator;
-    [SerializeField] Transform Player;
+    Transform Player;
     [SerializeField] GameObject explosionParticle;
     [SerializeField] GameObject puffParticle;
     Vector3 startTransform;
@@ -28,6 +28,7 @@ public class Destructable : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        Player = GameObject.Find("ChibiPlayer").transform;
 
     }
     private void Update()
