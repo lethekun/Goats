@@ -12,7 +12,7 @@ public class Destructable : MonoBehaviour
     [SerializeField]
     public CubeColor cubeColor;
 
-
+    Animator animator;
     [SerializeField] Transform Player;
     [SerializeField] GameObject explosionParticle;
     [SerializeField] GameObject puffParticle;
@@ -36,21 +36,16 @@ public class Destructable : MonoBehaviour
         float osman = Player.position.z;
         float mahmut = gameObject.transform.position.z;
         float kamil = mahmut - osman;
-        if( osman <= mahmut && kamil <= 15f)
+        if( kamil <= 15f)
         {
             leyla.enabled = true;
-            //if (leyla.enabled = false)
-            //{
-            //    gameObject.transform.DOMoveY(3f, 1f);
-            //}
+           // animator.SetBool("yipyip", true);
+          
         }
         else
         {
             leyla.enabled = false;
-            //if (leyla.enabled = true)
-            //{
-            //    gameObject.transform.DOMoveY(2f, 1f);
-            //}
+           
         }
     }
 
