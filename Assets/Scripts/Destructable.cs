@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityScript.Steps;
+using DG.Tweening;
 
 public class Destructable : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class Destructable : MonoBehaviour
     
     [SerializeField]
     public CubeColor cubeColor;
-    
+
+
+    [SerializeField] Transform Player;
     [SerializeField] GameObject explosionParticle;
     [SerializeField] GameObject puffParticle;
     Vector3 startTransform;
@@ -19,13 +22,37 @@ public class Destructable : MonoBehaviour
     float explosionForce = 1500f;
     [SerializeField]
     float explosionRadius = 2f;
+    public int reward = 10;
+
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-    }
 
-    public int reward = 10;
+    }
+    private void Update()
+    {
+        MeshRenderer leyla = gameObject.GetComponent<MeshRenderer>();
+        float osman = Player.position.z;
+        float mahmut = gameObject.transform.position.z;
+        float kamil = mahmut - osman;
+        if( osman <= mahmut && kamil <= 15f)
+        {
+            leyla.enabled = true;
+            //if (leyla.enabled = false)
+            //{
+            //    gameObject.transform.DOMoveY(3f, 1f);
+            //}
+        }
+        else
+        {
+            leyla.enabled = false;
+            //if (leyla.enabled = true)
+            //{
+            //    gameObject.transform.DOMoveY(2f, 1f);
+            //}
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -66,4 +93,13 @@ public class Destructable : MonoBehaviour
         if (puffParticle != null)
             Destroy(Instantiate(puffParticle, transform.position, puffParticle.transform.rotation), 1f);        
     }
+    //IEnumerator FadeColor()
+    //{
+    //    MeshRenderer Osman =  gameObject.GetComponent<MeshRenderer>();        
+    //    Osman.material.DOColor(Color.blue, 3f);
+    //    yield return new WaitForSeconds(2f);
+    //    Osman.material.DOColor(Color.red, 3f);
+    //}
+
+
 }

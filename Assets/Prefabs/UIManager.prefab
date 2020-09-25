@@ -44,4 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
-  score: {fileID: 0}
+  comboText: {fileID: 0}
+  levelFinishedText: {fileID: 0}
+  Player: {fileID: 0}
+  EndLine: {fileID: 0}
+  slider: {fileID: 0}
+  MovementIndicator: {fileID: 0}

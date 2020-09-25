@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 61 EMISSION-ORANGE
+  m_Name: "63 - Em\u0131ss\u0131on Red"
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
@@ -104,7 +104,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.98039216, g: 0.6509804, b: 0.1764706, a: 1}
+    - _BaseColor: {r: 0.5943396, g: 0.04019919, b: 0.0028034954, a: 1}
     - _Color: {r: 0.98039216, g: 0.6509804, b: 0.1764706, a: 1}
-    - _EmissionColor: {r: 1.837, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.4056604, g: 0, b: 0.16571912, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

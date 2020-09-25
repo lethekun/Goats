@@ -81,7 +81,7 @@ namespace ProceduralMeshExploder
             }
 
             transform.localPosition = Vector3.zero;
-            transform.localScale = Vector3.one;
+            transform.localScale = Vector3.one /3;
             transform.localEulerAngles = Vector3.zero;
             transform.parent = null;
 
