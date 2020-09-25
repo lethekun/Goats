@@ -39,7 +39,7 @@ public class LevelDesigner : MonoBehaviour
         }
         //ikinci davula kadar tekrar 120 beat atıyorum
         float ilkDavulSonuPos = (firstDrumAsSecond + 8) * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
-        for (int i = 0; i < (secondDrumAsSecond - firstDrumAsSecond - 8) * 2; i++)
+        for (int i = 0; i < (secondDrumAsSecond - firstDrumAsSecond - 8) * 2-1; i++)
         {
             Instantiate(cubes[0], new Vector3(Mathf.Sign(Random.Range(-1f, +1f)) * 2 / 3, 2f, ilkDavulSonuPos + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
         }
