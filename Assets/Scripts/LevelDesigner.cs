@@ -10,11 +10,11 @@ public class LevelDesigner : MonoBehaviour
     float firstDrumAsSecond = 18f;
     float secondDrumAsSecond = 42;
     float[] davulSaniyeFarklari = new float[] { 0f, 1f, 1.375f, 1.75f, 3f, 3.375f, 3.75f, 5f, 5.375f, 5.75f, 7f, 7.125f, 7.375f, 7.5f, 7.75f };
-    float[] davulSaniyeFarklari2 = new float[] { 0f, 0.375f, 0.75f, 2f, 2.375f, 2.75f };
+    float[] davulSaniyeFarklari2 = new float[] { 0f, 0.375f, 0.75f, 1f, 2f, 2.375f, 2.75f, 3f };
     void Start()
     {
         float zOffSet = firstBeatAsSecond * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
-        endline.transform.position = new Vector3(0, 2.531f, 45 * PlayerMovement.forwardSpeed);
+        endline.transform.position = new Vector3(0, 2.531f, 47 * PlayerMovement.forwardSpeed);
         //ilk 120 beat kısım
         for (int i = 0; i < (firstDrumAsSecond - firstBeatAsSecond) * 2 - 1; i++)
         {

@@ -18,11 +18,11 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        maxDistance = getDistance();
         ScoreManager.OnScoreChanged += UpdateScore;
         PlayerInteraction.OnObstacleDestroyed += BoomBoomScore;
         PlayerInteraction.OnLevelFinished += OnFinishHandler;
         InputController.mousePressed += HideMovementIndicator;
+        InputController.mousePressed += SetMaxDistance;
     }
     private void Update()
     {
@@ -54,6 +54,12 @@ public class UIManager : MonoBehaviour
         comboText.DOFade(0, 2f);
     }
 
+    void SetMaxDistance()
+    {
+        maxDistance = getDistance();
+        InputController.mousePressed -= SetMaxDistance;
+    }
+
     float getDistance()
     {
         return Vector3.Distance(Player.position, EndLine.position);
@@ -79,6 +85,7 @@ public class UIManager : MonoBehaviour
     private void OnDisable()
     {
         InputController.mousePressed -= HideMovementIndicator;
+        InputController.mousePressed -= SetMaxDistance;
         ScoreManager.OnScoreChanged -= UpdateScore;
         PlayerInteraction.OnObstacleDestroyed -= BoomBoomScore;
         PlayerInteraction.OnLevelFinished -= OnFinishHandler;
