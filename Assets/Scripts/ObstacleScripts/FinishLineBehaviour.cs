@@ -5,12 +5,13 @@ using DG.Tweening;
 public class FinishLineBehaviour : MonoBehaviour
 {
     SpriteRenderer _sr;
-    [SerializeField]
+
     Transform Player;
     private void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
         _sr.DOFade(0f, 0.1f);
+        Player = GameObject.Find("ChibiPlayer").transform;
     }
 
     private void Update()

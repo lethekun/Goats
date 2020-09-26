@@ -10,6 +10,7 @@ TagManager:
   - Melee
   - FinishLine
   - Fire
+  - ColorChanger
   layers:
   - Default
   - TransparentFX
