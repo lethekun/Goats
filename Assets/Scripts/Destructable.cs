@@ -33,21 +33,27 @@ public class Destructable : MonoBehaviour
     }
     private void Update()
     {
-        MeshRenderer leyla = gameObject.GetComponent<MeshRenderer>();
-        float osman = Player.position.z;
-        float mahmut = gameObject.transform.position.z;
-        float kamil = mahmut - osman;
-        if( kamil <= 15f)
+        MeshRenderer mRenderer = gameObject.GetComponent<MeshRenderer>();
+        float playerZPos = Player.position.z;
+        float destructableZPos = gameObject.transform.position.z;
+        float zDiff = destructableZPos - playerZPos;
+        
+        if (zDiff > 15f)
         {
-            leyla.enabled = true;
+            mRenderer.enabled = false;
+        }
+        else if ( zDiff <= 15f && zDiff >= -2)
+        {
+            mRenderer.enabled = true;
            // animator.SetBool("yipyip", true);
           
         }
         else
         {
-            leyla.enabled = false;
-           
+            PlayerInteraction.comboCount = 1;
+            Destroy(gameObject);
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)
