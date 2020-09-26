@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
 
 public class UIManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class UIManager : MonoBehaviour
         PlayerInteraction.OnLevelFinished += OnFinishHandler;
         InputController.mousePressed += HideMovementIndicator;
         InputController.mousePressed += SetMaxDistance;
+        Destructable.OnBoxMissed += OnBoxMissedHandler;
     }
     private void Update()
     {
@@ -82,6 +84,13 @@ public class UIManager : MonoBehaviour
         levelFinishedText.DOFade(1f,0.2f);
     }
 
+    void OnBoxMissedHandler()
+    {
+        CancelInvoke("DisableComboText");
+        comboText.DOFade(1f, 0.1f);
+        comboText.text = "Missed!";
+    }
+
     private void OnDisable()
     {
         InputController.mousePressed -= HideMovementIndicator;
@@ -89,5 +98,6 @@ public class UIManager : MonoBehaviour
         ScoreManager.OnScoreChanged -= UpdateScore;
         PlayerInteraction.OnObstacleDestroyed -= BoomBoomScore;
         PlayerInteraction.OnLevelFinished -= OnFinishHandler;
+        Destructable.OnBoxMissed -= OnBoxMissedHandler;
     }
 }

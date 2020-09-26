@@ -23,7 +23,7 @@ public class Destructable : MonoBehaviour
     [SerializeField]
     float explosionRadius = 2f;
     public int reward = 10;
-
+    public static event Action OnBoxMissed;
 
     private void Awake()
     {
@@ -50,7 +50,8 @@ public class Destructable : MonoBehaviour
         }
         else
         {
-            PlayerInteraction.comboCount = 1;
+            PlayerInteraction.comboCount = 0;
+            OnBoxMissed?.Invoke();
             Destroy(gameObject);
         }
 
