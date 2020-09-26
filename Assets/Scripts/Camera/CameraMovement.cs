@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
     bool firstTapDone;
 
     private void Awake()
@@ -14,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         if (!firstTapDone) return;
-        transform.position += new Vector3(0, 0, moveSpeed * Time.smoothDeltaTime);
+        transform.position += new Vector3(0, 0, PlayerMovement.forwardSpeed * Time.smoothDeltaTime);
     }
 
     void WaitForFirstTap()
