@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
     }
     void UpdateScore()
     { 
-        scoreText.text = "Score: " + ScoreManager.Instance.totalScore;
+        scoreText.text = ScoreManager.Instance.totalScore.ToString();
     }
 
     void BoomBoomScore(int reward, int comboCount)
