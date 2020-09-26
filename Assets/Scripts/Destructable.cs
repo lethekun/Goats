@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityScript.Steps;
 using DG.Tweening;
 
 public class Destructable : MonoBehaviour

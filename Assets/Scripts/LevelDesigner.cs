@@ -23,13 +23,15 @@ public class LevelDesigner : MonoBehaviour
         {
             if (i % 3 != 0 || i == 0)
             {
-                Instantiate(cubes[0], new Vector3(1f, 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+                GameObject cube = Instantiate(cubes[0], new Vector3(1f, 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+                cube.GetComponent<Destructable>().clip = hitSounds[8];
             }
             else
             {
                 for (float j = 0f; j < cubes[0].transform.localScale.x * 3; j += cubes[0].transform.localScale.x)
                 {
-                    Instantiate(cubes[0], new Vector3(j, 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+                    GameObject cube = Instantiate(cubes[0], new Vector3(j, 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+                    cube.GetComponent<Destructable>().clip = hitSounds[8];
                 }
             }
         }
@@ -60,7 +62,8 @@ public class LevelDesigner : MonoBehaviour
 
         for (int i = 3; i < (secondDrumAsSecond - firstDrumAsSecond - 8) * 2-1; i++)
         {
-            Instantiate(cubes[0], new Vector3(Mathf.Sign(Random.Range(-1f, +1f)) * 2 / 3, 2f, ilkDavulSonuPos + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+            GameObject cube = Instantiate(cubes[0], new Vector3(Mathf.Sign(Random.Range(-1f, +1f)) * 2 / 3, 2f, ilkDavulSonuPos + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+            cube.GetComponent<Destructable>().clip = hitSounds[8];
         }
 
         //ikinci davul
