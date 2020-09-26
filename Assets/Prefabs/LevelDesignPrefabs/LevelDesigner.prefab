@@ -46,4 +46,15 @@ MonoBehaviour:
   cubes:
   - {fileID: 6554817189954789206, guid: 85d6881b768094d48af9821e1f04bf6b, type: 3}
   - {fileID: 2986627330009486113, guid: 1f62dee47ed0d7a4e9428c04ad723a14, type: 3}
+  hitSounds:
+  - {fileID: 8300000, guid: d707891901f9d97429f8b05a7a71aab9, type: 3}
+  - {fileID: 8300000, guid: 141154a716d92a44aa314b6a3c2d80f1, type: 3}
+  - {fileID: 8300000, guid: f9e8d2f2ef1d50e48b1d33d538d9590d, type: 3}
+  - {fileID: 8300000, guid: 1c7f813c2294bbf47ad61186443e0729, type: 3}
+  - {fileID: 8300000, guid: 93974eff590562c40b31ed0a776f4962, type: 3}
+  - {fileID: 8300000, guid: 3aad019c0ae021846826581dbd61e84a, type: 3}
+  - {fileID: 8300000, guid: 71ba703c0ff3a3d418c3ab2dcb3ef942, type: 3}
+  - {fileID: 8300000, guid: 15308d11523b15d489132a804ab85f23, type: 3}
   endline: {fileID: 0}
+  colorChangerPrefab: {fileID: 591915216635114327, guid: aa89ec0e62c1ef444920691464c24481,
+    type: 3}
