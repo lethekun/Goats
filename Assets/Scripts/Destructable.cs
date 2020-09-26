@@ -50,8 +50,11 @@ public class Destructable : MonoBehaviour
         }
         else
         {
-            PlayerInteraction.comboCount = 0;
-            OnBoxMissed?.Invoke();
+            //if(_gameMode == GameModes.Hard)
+            //{
+                //PlayerInteraction.comboCount = 0;
+                //OnBoxMissed?.Invoke();
+            //}
             Destroy(gameObject);
         }
 
