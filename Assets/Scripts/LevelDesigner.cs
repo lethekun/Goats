@@ -32,11 +32,12 @@ public class LevelDesigner : MonoBehaviour
             //Instantiate(cubes[0], new Vector3(Mathf.Sign(Random.Range(-1f, +1f)) * 2 / 3, 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
         }
         //ilk davul kısmı
-        float zDrumOffset = firstDrumAsSecond * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
+        float zDrumOffset = firstDrumAsSecond * PlayerMovement.forwardSpeed + cubes[1].transform.localScale.x / 2;
         for(int i = 0; i < davulSaniyeFarklari.Length; i++)
         {
             Instantiate(cubes[1], new Vector3(Mathf.Sign(Random.Range(-1f, +1f)) * 2 / 3, 2f, zDrumOffset + davulSaniyeFarklari[i] * PlayerMovement.forwardSpeed), Quaternion.identity);
         }
+
         //ikinci davula kadar tekrar 120 beat atıyorum
         float ilkDavulSonuPos = (firstDrumAsSecond + 8) * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
         for (int i = 0; i < (secondDrumAsSecond - firstDrumAsSecond - 8) * 2-1; i++)

@@ -26,9 +26,9 @@ public class ScoreManager : MonoBehaviour
         PlayerInteraction.OnObstacleDestroyed += AddScore;
     }
 
-    public void AddScore(int reward, int comboCount)
+    public void AddScore(int reward)
     {
-        totalScore += reward * comboCount;
+        totalScore += reward *PlayerInteraction.comboCount;
         OnScoreChanged?.Invoke();
     }
     private void OnDisable()

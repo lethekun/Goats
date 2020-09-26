@@ -37,13 +37,13 @@ public class UIManager : MonoBehaviour
         scoreText.text = "Score: " + ScoreManager.Instance.totalScore;
     }
 
-    void BoomBoomScore(int reward, int comboCount)
+    void BoomBoomScore(int reward)
     {
         // comboText.transform.localScale *= 1.01f;
         CancelInvoke("DisableComboText");
         comboText.DOFade(1, .1f);
         comboText.enabled = true;
-        comboText.text = "Combo x" + comboCount;
+        comboText.text = "Combo x" + PlayerInteraction.comboCount;
         Animator animCombo = comboText.GetComponent<Animator>();
         animCombo.SetTrigger("boom");
         Invoke("DisableComboText", 1f);

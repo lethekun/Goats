@@ -21,9 +21,9 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]
     AudioSource _audio;
 
-    int comboCount = 0;
+    public static int comboCount = 0;
 
-    public static event Action<int,int> OnObstacleDestroyed;
+    public static event Action<int> OnObstacleDestroyed;
     public static event Action OnLevelFinished;
     private void Start()
     {
@@ -65,7 +65,7 @@ public class PlayerInteraction : MonoBehaviour
                 _audio.PlayOneShot(_audio.clip);
             }
 
-            OnObstacleDestroyed?.Invoke(cube.reward, comboCount);
+            OnObstacleDestroyed?.Invoke(cube.reward);
         }
     }
     void AfterDeathSettings()

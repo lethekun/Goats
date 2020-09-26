@@ -10,10 +10,12 @@ public class InputController : MonoBehaviour
     public LayerMask ignoredLayer;
     public float Horz { get { return _horz; } }
     public static event Action mousePressed;
+    [SerializeField]
+    float beklemeSuresi = 4f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && Time.time > beklemeSuresi)
         {
             mousePressed?.Invoke();
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
