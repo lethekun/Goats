@@ -9,20 +9,20 @@ public class Destructable : MonoBehaviour
 {
     public enum CubeColor { Red, Green, Blue, Yellow}
     
-    [SerializeField]
-    public CubeColor cubeColor;
+    [SerializeField] public CubeColor cubeColor;
+    [SerializeField] GameObject explosionParticle;
+    [SerializeField] GameObject puffParticle;
+    [SerializeField] float explosionForce = 1500f;
+    [SerializeField] float explosionRadius = 2f;
+
+    public int reward = 10;
+    public AudioClip clip;
 
     Animator animator;
     Transform Player;
-    [SerializeField] GameObject explosionParticle;
-    [SerializeField] GameObject puffParticle;
     Vector3 startTransform;
     Rigidbody _rb = null;
-    [SerializeField]
-    float explosionForce = 1500f;
-    [SerializeField]
-    float explosionRadius = 2f;
-    public int reward = 10;
+
     public static event Action OnBoxMissed;
 
     private void Awake()

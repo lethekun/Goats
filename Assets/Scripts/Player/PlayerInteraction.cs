@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] TMP_Text comboText;
 
 
-    Destructable.CubeColor currentCubeColor;
+    public static Destructable.CubeColor currentCubeColor;
 
     [SerializeField]
     AudioSource _audio;
@@ -54,7 +54,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 comboCount = 1;
                 //_audio.pitch = 1f;
-                _audio.PlayOneShot(_audio.clip);
+                _audio.PlayOneShot(cube.clip);
                 currentCubeColor = cube.cubeColor;
 
             }
@@ -62,7 +62,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 comboCount++;
                 //_audio.pitch *= 1f;
-                _audio.PlayOneShot(_audio.clip);
+                _audio.PlayOneShot(cube.clip);
             }
 
             OnObstacleDestroyed?.Invoke(cube.reward);
