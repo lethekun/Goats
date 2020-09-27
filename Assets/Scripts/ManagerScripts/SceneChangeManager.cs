@@ -13,7 +13,7 @@ public class SceneChangeManager : MonoBehaviour
     {
         TinySauce.OnGameFinished(SceneManager.GetActiveScene().buildIndex.ToString(), true, 0);
         Debug.Log("LoadNextScene clicked!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1)%10);
     }
 
     public void RestartScene()
