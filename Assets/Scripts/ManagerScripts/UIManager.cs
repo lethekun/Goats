@@ -32,6 +32,11 @@ public class UIManager : MonoBehaviour
             float distance = 1 - (getDistance() / maxDistance);
             setProgress(distance);
         }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            ScreenCapture.CaptureScreenshot("goats" + UnityEngine.Random.Range(0,1000) + ".png");
+        }
     }
     void UpdateScore()
     { 
