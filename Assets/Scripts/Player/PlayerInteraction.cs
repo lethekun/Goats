@@ -25,6 +25,10 @@ public class PlayerInteraction : MonoBehaviour
 
     public static event Action<int> OnObstacleDestroyed;
     public static event Action OnLevelFinished;
+    private void OnEnable()
+    {
+        comboCount = 0;
+    }
     private void Start()
     {
         animator = GetComponent<Animator>();
