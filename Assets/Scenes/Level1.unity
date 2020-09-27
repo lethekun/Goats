@@ -1198,6 +1198,31 @@ PrefabInstance:
       propertyPath: asdfghj
       value: 
       objectReference: {fileID: 1712378546}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: _slider
+      value: 
+      objectReference: {fileID: 1961370776}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: movementIndicator
+      value: 
+      objectReference: {fileID: 1623376900}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: scorePanel
+      value: 
+      objectReference: {fileID: 909814027}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: mainMenu
+      value: 
+      objectReference: {fileID: 1712378546}
+    - target: {fileID: 7401341303942668675, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
+        type: 3}
+      propertyPath: chibiPlayer
+      value: 
+      objectReference: {fileID: 2137387146}
     - target: {fileID: 7401341303942668676, guid: 74e86a5280085654fa1c92d0a4d1ed3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1964,6 +1989,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2137387146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3746641684091142122, guid: 7571645a2ea75754facab6bb1cc8ecb4,
+    type: 3}
+  m_PrefabInstance: {fileID: 266334962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &677010685374720383
 PrefabInstance:
   m_ObjectHideFlags: 0
