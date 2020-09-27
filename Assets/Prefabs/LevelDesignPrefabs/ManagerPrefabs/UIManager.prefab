@@ -48,5 +48,8 @@ MonoBehaviour:
   levelFinishedText: {fileID: 0}
   Player: {fileID: 0}
   EndLine: {fileID: 0}
+  LevelFinishedPanel: {fileID: 0}
   slider: {fileID: 0}
   MovementIndicator: {fileID: 0}
+  replay: {fileID: 0}
+  nextLevel: {fileID: 0}

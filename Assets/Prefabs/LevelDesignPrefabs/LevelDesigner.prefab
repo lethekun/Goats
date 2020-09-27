@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2813112331266553036}
   - component: {fileID: 2813112331266553027}
-  - component: {fileID: 1446944632}
+  - component: {fileID: 1329599125}
   m_Layer: 0
   m_Name: LevelDesigner
   m_TagString: Untagged
@@ -60,7 +60,7 @@ MonoBehaviour:
   endline: {fileID: 0}
   colorChangerPrefab: {fileID: 591915216635114327, guid: aa89ec0e62c1ef444920691464c24481,
     type: 3}
---- !u!114 &1446944632
+--- !u!114 &1329599125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
