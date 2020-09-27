@@ -10,11 +10,10 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]
     TMP_Text scoreText, comboText, levelFinishedText;
-    [SerializeField] Transform Player;
-    [SerializeField] Transform EndLine;
+    [SerializeField] Transform Player, EndLine, LevelFinishedPanel;
     [SerializeField] Slider slider;
     [SerializeField] GameObject MovementIndicator;
-
+    [SerializeField] RawImage replay, nextLevel;
     float maxDistance;
 
     void Awake()
@@ -79,9 +78,12 @@ public class UIManager : MonoBehaviour
 
     void OnFinishHandler()
     {
+        LevelFinishedPanel.gameObject.SetActive(true);
         scoreText.DOFade(0, .2f);
         comboText.DOFade(0, .2f);
         levelFinishedText.DOFade(1f,0.2f);
+        replay.DOFade(1f, 0.2f);
+        nextLevel.DOFade(1f, 0.2f);
     }
 
     void OnBoxMissedHandler()
