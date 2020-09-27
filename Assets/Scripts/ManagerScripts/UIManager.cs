@@ -16,8 +16,20 @@ public class UIManager : MonoBehaviour
     [SerializeField] RawImage replay, nextLevel;
     float maxDistance;
 
+    [Header("Dar Geldi Sana Angara")]
+
+    [SerializeField] GameObject _slider;
+    [SerializeField] GameObject movementIndicator;
+    [SerializeField] GameObject scorePanel;
+    [SerializeField] GameObject chibiPlayer;
+    [SerializeField] GameObject mainMenu;
+
+
+
+
     void Awake()
     {
+        PlayMenu();
         ScoreManager.OnScoreChanged += UpdateScore;
         PlayerInteraction.OnObstacleDestroyed += BoomBoomScore;
         PlayerInteraction.OnLevelFinished += OnFinishHandler;
@@ -101,5 +113,22 @@ public class UIManager : MonoBehaviour
         PlayerInteraction.OnObstacleDestroyed -= BoomBoomScore;
         PlayerInteraction.OnLevelFinished -= OnFinishHandler;
         Destructable.OnBoxMissed -= OnBoxMissedHandler;
+    }
+
+    private void PlayMenu()
+    {
+        _slider.SetActive(false);
+        movementIndicator.SetActive(false);
+        scorePanel.SetActive(false);
+        chibiPlayer.SetActive(false);
+    }
+    public void Play()
+    {
+        _slider.SetActive(true);
+        movementIndicator.SetActive(true);
+        scorePanel.SetActive(true);
+        chibiPlayer.SetActive(true);
+        mainMenu.SetActive(false);
+
     }
 }
