@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelDesignerTwo : MonoBehaviour
 {
-    public GameObject[] cubes;
+    public GameObject[] cubes = new GameObject[4];
     public AudioClip[] hitSounds;
     public GameObject endline;
     public GameObject colorChangerPrefab;
@@ -38,8 +38,7 @@ public class LevelDesignerTwo : MonoBehaviour
                     }
                     else
                     {
-                        int randomCubeIndex = Random.Range(0, cubes.Length);
-                        if (randomCubeIndex == 1) randomCubeIndex++;
+                        int randomCubeIndex = Random.Range(2, cubes.Length);
                         GameObject cube = Instantiate(cubes[randomCubeIndex], new Vector3(xPositions[j], 2f, zOffSet + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
                         cube.GetComponent<Destructable>().clip = hitSounds[8];
                     }
@@ -83,7 +82,7 @@ public class LevelDesignerTwo : MonoBehaviour
                 }
                 else
                 {
-                    GameObject cube = Instantiate(cubes[Random.Range(0, cubes.Length)], new Vector3(xPositions[j], 2f, ilkDavulSonuPos + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
+                    GameObject cube = Instantiate(cubes[Random.Range(2, cubes.Length)], new Vector3(xPositions[j], 2f, ilkDavulSonuPos + i * PlayerMovement.forwardSpeed / 2), Quaternion.identity);
                     cube.GetComponent<Destructable>().clip = hitSounds[8];
                 }
             }

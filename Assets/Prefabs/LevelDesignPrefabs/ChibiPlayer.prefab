@@ -1376,7 +1376,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 42caffe1132386f4daa037a9663088b9, type: 2}
+  - {fileID: 2100000, guid: 433037edf54c8414fbc7f9ed69a90738, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2765,7 +2765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoredLayer:
     serializedVersion: 2
-    m_Bits: 32
+    m_Bits: 3872
   beklemeSuresi: 2
 --- !u!114 &6221907955624988951
 MonoBehaviour:
