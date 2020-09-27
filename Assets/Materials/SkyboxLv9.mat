@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SkyboxLv4
+  m_Name: SkyboxLv9
   m_Shader: {fileID: 108, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _MAPPING_LATITUDE_LONGITUDE_LAYOUT
   m_LightmapFlags: 4
@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ebc8cc4f353ce0a4aa58d853c0686987, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6f7792ca9dbf06c4f8ed5de0a042fd1e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -68,7 +68,7 @@ Material:
     - _Cutoff: 0.5
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Exposure: 1.1
+    - _Exposure: 0.82
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -93,4 +93,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
