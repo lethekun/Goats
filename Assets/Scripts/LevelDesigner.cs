@@ -37,7 +37,7 @@ public class LevelDesigner : MonoBehaviour
         }
         
         //colorchanger
-        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, (firstDrumAsSecond - 0.5f) * PlayerMovement.forwardSpeed), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = Destructable.CubeColor.Yellow;
+        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, (firstDrumAsSecond - 0.5f) * PlayerMovement.forwardSpeed), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = cubes[1].GetComponent<Destructable>().cubeColor;
         
         //ilk davul kısmı
         float zDrumOffset = firstDrumAsSecond * PlayerMovement.forwardSpeed + cubes[1].transform.localScale.x / 2;
@@ -58,7 +58,7 @@ public class LevelDesigner : MonoBehaviour
         float ilkDavulSonuPos = (firstDrumAsSecond + 8) * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
 
         //colorchanger
-        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, ilkDavulSonuPos + PlayerMovement.forwardSpeed / 2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = Destructable.CubeColor.Blue;
+        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, ilkDavulSonuPos + PlayerMovement.forwardSpeed / 2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = cubes[0].GetComponent<Destructable>().cubeColor;
 
         for (int i = 3; i < (secondDrumAsSecond - firstDrumAsSecond - 8) * 2-1; i++)
         {
@@ -70,7 +70,7 @@ public class LevelDesigner : MonoBehaviour
         float zDrumOffset2 = secondDrumAsSecond * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
 
         //colorchanger
-        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, zDrumOffset2 - PlayerMovement.forwardSpeed/2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = Destructable.CubeColor.Yellow;
+        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, zDrumOffset2 - PlayerMovement.forwardSpeed/2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = cubes[1].GetComponent<Destructable>().cubeColor;
 
         for (int i = 0; i < davulSaniyeFarklari2.Length; i++)
         {
