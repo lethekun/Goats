@@ -812,7 +812,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cubes.Array.data[1]
       value: 
-      objectReference: {fileID: 7736715080975940981, guid: 11db2bc26ffa1b54d8cf9832b87a453f,
+      objectReference: {fileID: 2986627330009486113, guid: 1f62dee47ed0d7a4e9428c04ad723a14,
         type: 3}
     - target: {fileID: 2813112331266553036, guid: ad8c82df5c6504141a95d3e7aaa4f21a,
         type: 3}
