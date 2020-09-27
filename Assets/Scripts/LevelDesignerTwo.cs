@@ -94,7 +94,7 @@ public class LevelDesignerTwo : MonoBehaviour
         float zDrumOffset2 = secondDrumAsSecond * PlayerMovement.forwardSpeed + cubes[0].transform.localScale.x / 2;
 
         //colorchanger
-        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, zDrumOffset2 - PlayerMovement.forwardSpeed / 2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = cubes[1].GetComponent<Destructable>().cubeColor; ;
+        Instantiate(colorChangerPrefab, new Vector3(0, 1.51f, zDrumOffset2 - PlayerMovement.forwardSpeed / 2), colorChangerPrefab.transform.rotation).GetComponent<ColorChanger>().newColor = cubes[1].GetComponent<Destructable>().cubeColor;
 
         for (int i = 0; i < davulSaniyeFarklari2.Length; i++)
         {
